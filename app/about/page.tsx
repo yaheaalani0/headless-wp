@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function HomePage() {
+export default function AboutPage() {
   return (
     <main
       style={{
@@ -10,11 +10,14 @@ export default function HomePage() {
         margin: "0 auto",
       }}
     >
-      <h1>WordPress Headless Blog</h1>
-      <p>Welcome to your headless WordPress + Next.js setup! 🎉</p>
+      <h1>About Page</h1>
+      <p>
+        This is a simple About page to test routing in your Next.js app. 
+        You built this using the new App Router in Next 16! 🎉
+      </p>
 
       <Link
-        href="/about"
+        href="/"
         style={{
           display: "inline-block",
           marginTop: "1.5rem",
@@ -25,7 +28,7 @@ export default function HomePage() {
           textDecoration: "none",
         }}
       >
-        Go to About Page
+        Back to Home
       </Link>
     </main>
   );
