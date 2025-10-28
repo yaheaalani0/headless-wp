@@ -3,7 +3,7 @@ import fetch from "cross-fetch";
 
 const client = new ApolloClient({
   link: new HttpLink({
-    uri: "http://headless-wp.local/graphql", // your WordPress GraphQL endpoint
+    uri: process.env.NEXT_PUBLIC_WORDPRESS_API_URL || "http://headless-wp.local/graphql",
     fetch,
   }),
   cache: new InMemoryCache(),
